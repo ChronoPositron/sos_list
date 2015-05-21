@@ -15,6 +15,9 @@ gem 'volt-user_templates', '~> 0.2.0'
 # Add ability to send e-mail from apps.
 gem 'volt-mailer', '~> 0.0.2'
 
+# Add for field validations.
+gem 'volt-fields'
+
 group :test do
   # Testing dependencies
   gem 'rspec', '~> 3.2.0'

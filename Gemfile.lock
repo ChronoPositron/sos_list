@@ -170,5 +170,6 @@ DEPENDENCIES
   volt (= 0.9.2)
   volt-bootstrap (~> 0.0.10)
   volt-bootstrap_jumbotron_theme (~> 0.1.0)
+  volt-fields
   volt-mailer (~> 0.0.2)
   volt-user_templates (~> 0.2.0)
