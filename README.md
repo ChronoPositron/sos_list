@@ -3,7 +3,7 @@ Simple Online Shareable List - A todo or grocery list webapp (with a nautical th
 
 ## Badges
 
-:soon: Somewhere over the horizon.
+[![Code Climate](https://codeclimate.com/github/ChronoPositron/sos_list/badges/gpa.svg)](https://codeclimate.com/github/ChronoPositron/sos_list) :soon: More joining the fleet.
 
 ## Status
 
