@@ -1,13 +1,9 @@
 # By default Volt generates this controller for your Main component
 module Main
   class MainController < Volt::ModelController
-    def index
-      # Add code for when the index view is loaded
-    end
+    before_action :require_login, only: :index
 
-    def about
-      # Add code for when the about view is loaded
-    end
+    model :store
 
     private
 

@@ -1,0 +1,36 @@
+<:Title>
+  List Items
+
+<:Body>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ model.name }}{{ if model.items.size > 0 }} <small>({{ model.items.size }})</small>{{ end }}</h1>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: {{ percent_complete }}%;" >
+          {{ percent_complete }}% Finished
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button e-click="complete_all" class="btn btn-default">Complete {{ incomplete }} Items</button>
+      <button e-click="remove_completed" class="btn btn-default">Remove Completed</button>
+
+      <ol class="list list-unstyled">
+        {{ items.each_with_index do |item, index| }}
+          <:item:show model="{{ item }}" index="{{ index }}" />
+        {{ end }}
+      </ol>
+
+      <:item:new list="{{ model }}" />
+    </div>
+
+    <div class="col-md-6">
+      {{ if current_item }}
+        <p class="lead">{{ current_item.name }}</p>
+
+        <textarea>{{ current_item.description}}</textarea>
+      {{ end }}
+    </div>
+  </div>

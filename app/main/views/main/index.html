@@ -1,6 +1,30 @@
 <:Title>
-  Home
+Your Lists
 
 <:Body>
-  <h1>Home</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Your Lists</h1>
 
+      <ol class="list list-unstyled">
+        {{ _lists.each_with_index do |list, index| }}
+          <li class="row">
+
+              <a href="{{ url_for(controller: 'list', action: 'show', _id: list._id) }}">
+            <div class="col-md-11">
+                {{ list._name }}
+
+            </div></a>
+            <div class="col-md-1">
+              <button e-click="list.destroy" type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </li>
+        {{ end }}
+      </ol>
+    </div>
+    <div class="col-md-4 new-list">
+     <:list:new lists="{{ _lists }}" />
+    </div>
+  </div>
