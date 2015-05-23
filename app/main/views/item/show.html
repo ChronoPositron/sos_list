@@ -1,8 +1,8 @@
 <li e-click="params._index = attrs.index"
     class="row {{ if current_index == attrs.index }} selected{{ end }}">
-  <div class="col-md-1"><input type="checkbox" checked="{{ completed }}" class="inline-checkbox" /></div>
-  <div class="col-md-10 item{{ if completed }} complete{{ end }}">{{ name }}</div>
-  <div class="col-md-1">
+  <div class="col-xs-1"><input type="checkbox" checked="{{ completed }}" class="inline-checkbox" /></div>
+  <div class="col-xs-10 item{{ if completed }} complete{{ end }}">{{ name }}</div>
+  <div class="col-xs-1">
     <button e-click="model.destroy" type="button" class="close" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
