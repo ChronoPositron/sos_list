@@ -5,8 +5,8 @@ Volt.configure do |config|
   # Basic App Info (stuff you should set)
   #######################################
   config.domain = 'sos-list.com'
-  config.app_name = 'Sos_list'
-  config.mailer.from = 'Sos_list <no-reply@sos-list.com>'
+  config.app_name = 'SOS List'
+  config.mailer.from = 'SOS List <no-reply@sos-list.com>'
 
   ############
   # App Secret
@@ -20,7 +20,7 @@ Volt.configure do |config|
   #
   # config.app_secret = ENV['APP_SECRET']
   #
-  config.app_secret = 'BQLEs0nA0EQi5cBHuMXtf9SSrRqhl_5DkS3TnJNEZuPS6jFZRDI0XR4hYQC6kR5wSfA'
+  config.app_secret = ENV['APP_SECRET']
 
   ###############
   # Log Filtering
