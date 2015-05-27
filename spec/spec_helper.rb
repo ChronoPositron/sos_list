@@ -11,4 +11,14 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  # Include support for FactoryGirl
+  config.include FactoryGirl::Syntax::Methods
+  config.before(:suite) do
+      # Check the factories
+      FactoryGirl.lint
+  end
+
+  # We need to explicity tell FactoryGirl to find the definitions
+  FactoryGirl.find_definitions
 end
