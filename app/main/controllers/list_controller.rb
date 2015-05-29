@@ -5,7 +5,7 @@ module Main
     end
 
     def show
-      self.model = store._lists.where(_id: params._id).fetch_first
+      self.model = store._lists.where(id: params.id).fetch_first
     end
 
     def save

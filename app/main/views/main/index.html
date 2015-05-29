@@ -9,7 +9,7 @@ Your Lists
       <ol class="list list-unstyled">
         {{ _lists.each_with_index do |list, index| }}
           <li class="row">
-            <a href="{{ url_for(controller: 'list', action: 'show', _id: list._id) }}">
+            <a href="{{ url_for(controller: 'list', action: 'show', id: list.id) }}">
               <div class="col-xs-11">
                 {{ list._name }}
               </div>
