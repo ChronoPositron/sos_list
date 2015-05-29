@@ -5,6 +5,8 @@ class List < Volt::Model
   field :name
   field :shareable
 
+  validate :name, presence: true
+
   # Only the owner can delete the list
   permissions(:delete) do
     deny unless owner?
@@ -13,5 +15,13 @@ class List < Volt::Model
   # Only the owner should be able to make the list shareable
   permissions(:create, :update) do
     deny :shareable unless owner?
+  end
+
+  def complete
+    items.count(&:completed)
+  end
+
+  def incomplete
+    items.size - complete
   end
 end

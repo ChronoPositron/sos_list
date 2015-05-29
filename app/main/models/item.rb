@@ -6,4 +6,8 @@ class Item < Volt::Model
   field :name
   field :description
   field :completed
+
+  def list=(list)
+    self.list_id = list.id
+  end
 end

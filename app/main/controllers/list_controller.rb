@@ -19,14 +19,6 @@ module Main
 
     private
 
-    def complete
-      model.items.count {|t| t._completed }
-    end
-
-    def incomplete
-      model.items.size - complete
-    end
-
     def complete_all
       model.items.each{|t| t._completed = true }
     end
