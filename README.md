@@ -3,7 +3,11 @@ Simple Online Shareable List - A todo or grocery list webapp (with a nautical th
 
 ## Badges
 
-[![Code Climate](https://codeclimate.com/github/ChronoPositron/sos_list/badges/gpa.svg)](https://codeclimate.com/github/ChronoPositron/sos_list) [![Apache License, Version 2.0](https://img.shields.io/github/license/chronopositron/sos_list.svg)](http://opensource.org/licenses/Apache-2.0) :soon: More joining the fleet.
+[![Travis](https://img.shields.io/travis/ChronoPositron/sos_list.svg)](https://travis-ci.org/ChronoPositron/sos_list)
+[![Code Climate](https://img.shields.io/codeclimate/github/ChronoPositron/sos_list.svg)](https://codeclimate.com/github/ChronoPositron/sos_list)
+[![Codecov](https://img.shields.io/codecov/c/github/ChronoPositron/sos_list.svg)](https://codecov.io/github/ChronoPositron/sos_list)
+[![Dependencies](https://img.shields.io/gemnasium/ChronoPositron/sos_list.svg)](https://gemnasium.com/ChronoPositron/sos_list)
+[![Apache License, Version 2.0](https://img.shields.io/github/license/chronopositron/sos_list.svg)](http://opensource.org/licenses/Apache-2.0)
 
 ## Status
 
