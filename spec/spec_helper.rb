@@ -2,6 +2,9 @@
 require 'volt/spec/setup'
 Volt.spec_setup
 
+# Load simplecov and let it load options from .simplecov
+require 'simplecov'
+
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.filter_run :focus

@@ -39,6 +39,9 @@ group :test do
   gem 'chromedriver2-helper', '~> 0.0.8'
   gem 'poltergeist', '~> 1.5.0'
   gem 'factory_girl', '~> 4.5.0'
+  gem 'codecov', '~> 0.0.8', :require => false
+  gem 'simplecov', '~> 0.10.0'
+  gem 'codeclimate-test-reporter', '~> 0.4.7'
 end
 
 # Server for MRI
