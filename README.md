@@ -3,7 +3,7 @@ Simple Online Shareable List - A todo or grocery list webapp (with a nautical th
 
 ## Badges
 
-[![Code Climate](https://codeclimate.com/github/ChronoPositron/sos_list/badges/gpa.svg)](https://codeclimate.com/github/ChronoPositron/sos_list) :soon: More joining the fleet.
+[![Code Climate](https://codeclimate.com/github/ChronoPositron/sos_list/badges/gpa.svg)](https://codeclimate.com/github/ChronoPositron/sos_list) [![Apache License, Version 2.0](https://img.shields.io/github/license/chronopositron/sos_list.svg)](http://opensource.org/licenses/Apache-2.0) :soon: More joining the fleet.
 
 ## Status
 
